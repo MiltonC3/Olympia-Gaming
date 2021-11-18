@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #121212;
+}
+main{
+    height: 100rem;
+}
+.navbar__background{
+    backdrop-filter: blur(140px);
+    background: linear-gradient(126.6deg, rgba(255, 255, 255, 0.09) 28.69%, rgba(255, 255, 255, 0) 100%);
+}
+.header__icon{
+    width: 10.9rem;
+}
