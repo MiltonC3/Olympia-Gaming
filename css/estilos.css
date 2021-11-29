@@ -169,7 +169,7 @@ body{
 /* SECCIONES DESKTOP */
 
 .main-desktop{
-    height: 330rem;
+    height: 303rem;
 }
 .seccion-inicio{
     height: 36.3rem;
@@ -512,7 +512,7 @@ body{
         left: 0;
     }
     .nav__mobile--li{
-        font-size: 1.65rem;
+        font-size: 2rem;
     }
     .nav__mobile--a{
         font-family: 'Metropolis Medium';
@@ -529,12 +529,6 @@ body{
         font-family: 'Metropolis Medium';
         font-size: 1rem;
         text-decoration: none;
-    }
-    .nav__mobile--icon-whatsapp{
-        font-size: 1.6rem;
-        position: relative;
-        top: 0.2rem;
-        left: 0.2rem;
     }
     .nav__mobile--forma{
         position: relative;
@@ -556,7 +550,7 @@ body{
     /* SECCIONES MOBILE */
 
     .main-mobile{
-        height: 310rem;
+        height: 274.5rem;
     }
     .seccion-inicio{
         height: 36.3rem;
@@ -778,7 +772,7 @@ body{
             text-align: center;
             font-family: 'Metropolis Medium';
             position: relative;
-            top: 2rem;
+            top: 1rem;
             font-size: 0.9rem;
             color: #333333;
         }

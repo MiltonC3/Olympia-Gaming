@@ -74,6 +74,7 @@ function scrollNavBar(pClass){
     
         }
     } else {
+
         if($(`#div-header-${pClass}`).offset().top > -10){
     
             $(`.nav__${pClass}--a-inicio`).addClass(`li-active-${pClass}`)
@@ -118,7 +119,7 @@ function scrollNavBar(pClass){
     
         }
     
-        if($(`#div-header-${pClass}`).offset().top > 3550){
+        if($(`#div-header-${pClass}`).offset().top > 3500){
     
             $(`.nav__${pClass}--a-equipo`).removeClass(`li-active-${pClass}`)
     
