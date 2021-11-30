@@ -446,7 +446,7 @@ body{
         background-color: #121212;
     }
 
-    /* header mobile menu */
+    /* mobile menu */
 
     .header__mobile--div-menu{
         width: 22.5vw;
@@ -512,7 +512,7 @@ body{
         left: 0;
     }
     .nav__mobile--li{
-        font-size: 2rem;
+        font-size: 1.65rem;
     }
     .nav__mobile--a{
         font-family: 'Metropolis Medium';
@@ -550,7 +550,7 @@ body{
     /* SECCIONES MOBILE */
 
     .main-mobile{
-        height: 274.5rem;
+        height: 274.4rem;
     }
     .seccion-inicio{
         height: 36.3rem;
@@ -575,12 +575,12 @@ body{
 
     .div-whatsapp-btn{
         position: relative;
-        left: 81vw;
+        left: 80vw;
         position: fixed;
         display: flex;
         justify-content: center;
         align-items: center;
-        top: 88vh;
+        top: 90vh;
         width: 2.8rem;
         height: 2.8rem;
         z-index: 3;
@@ -742,7 +742,7 @@ body{
     .footer__copyright--p{
         text-align: center;
         font-family: 'Metropolis Medium';
-        font-size: 0.8rem;
+        font-size: 0.9rem;
         color: #333333;
     }
     .footer__forma--1{
@@ -773,8 +773,12 @@ body{
             font-family: 'Metropolis Medium';
             position: relative;
             top: 1rem;
-            font-size: 0.9rem;
+            font-size: 1rem;
             color: #333333;
+        }
+        .footer__forma--1{
+            position: absolute;
+            margin-top: 30.1rem;
         }
     }
 }
