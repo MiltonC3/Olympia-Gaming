@@ -97,6 +97,7 @@ body{
     font-size: 1.1rem;
     text-decoration: none;
 }
+/* header redes */
 .header__desktop--div-redes{
     width: 22.5vw;
     display: flex;
@@ -110,7 +111,6 @@ body{
     align-items: center;
     justify-content: center;
 }
-/* header redes */
 .header__desktop--btn-facebook{
     text-decoration: none;
     width: 3rem;
@@ -503,10 +503,10 @@ body{
         justify-content: center;
         list-style: none;
         flex-direction: column;
-        left: 0;
+        left: 0.3rem;
     }
     .nav__mobile--li{
-        font-size: 1.65rem;
+        font-size: 1.6rem;
     }
     .nav__mobile--a{
         font-family: 'Metropolis Medium';
@@ -526,7 +526,41 @@ body{
     }
     .nav__mobile--forma{
         position: relative;
-        width: 6.5rem;
+        width: 5.5rem;
+    }
+
+    /* header redes mobile */
+    
+    .header__mobile--div-redes{
+        position: relative;
+        left: 0;
+        width: 15rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .header__mobile--redes-flex{
+        width: 9rem;
+        height: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .header__mobile--btn-facebook{
+        width: 2.8rem;
+        height: 2.2rem;
+    }
+    .header__mobile--btn-instagram{
+        width: 2.8rem;
+        height: 2.2rem;
+    }
+    .header__mobile--btn-twiter{
+        width: 2.8rem;
+        height: 2.2rem;
+    }
+    .header__mobile--btn-cafecito{
+        width: 2.8rem;
+        height: 2.2rem;
     }
 
     /* header mobile logo */
@@ -569,7 +603,7 @@ body{
 
     .div-whatsapp-btn{
         left: 80vw;
-        top: 90vh;
+        top: 89vh;
         width: 2.8rem;
         height: 2.8rem;
         box-shadow: 0px 12px 15px rgba(0, 0, 0, 0.3);
