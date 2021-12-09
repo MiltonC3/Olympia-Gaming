@@ -16,7 +16,6 @@
 body{
     background-color: #121212;
     overflow-x: hidden;
-    width: 100%;
 }
 
 /****************************************** DESKTOP ********************************************/
@@ -399,12 +398,12 @@ body{
 /* Icon whatsapp */
 
 .div-whatsapp-btn{
-    position: relative;
-    left: 93vw;
+    position: absolute;
+    bottom: 3rem;
+    right: 3rem;
     position: fixed;
     display: flex;
     justify-content: center;
-    top: 88vh;
     width: 3rem;
     height: 3.2rem;
     z-index: 3;
@@ -647,7 +646,8 @@ body{
         width: 5.5rem;
     }
     .div-whatsapp-btn{
-        left: 89vw;
+        bottom: 3rem;
+        right: 3rem;
     }
     .footer__forma--2{
         width: 2rem;
@@ -982,8 +982,8 @@ body{
     /* Icon whatsapp */
 
     .div-whatsapp-btn{
-        left: 80vw;
-        top: 89vh;
+        bottom: 2rem;
+        right: 2rem;
         width: 2.8rem;
         height: 2.9rem;
         box-shadow: 0px 12px 15px rgba(0, 0, 0, 0.3);
@@ -1172,10 +1172,8 @@ body{
         /* Icon whatsapp */
 
         .div-whatsapp-btn{
-            left: 88vw;
-            top: 89vh;
-            width: 2.8rem;
-            height: 2.9rem;
+            bottom: 2.5rem;
+            right: 2.5rem;
         }
         .btn-whatsapp{
             width: 2.8rem;
