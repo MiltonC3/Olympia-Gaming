@@ -27,6 +27,7 @@ btnCerrarMenu.addEventListener('click', () => {
     }, 100)
 
 })
+
 containerMenu.addEventListener('click', () => {
     btnCerrarMenu.click()
 })

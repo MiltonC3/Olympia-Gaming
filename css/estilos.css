@@ -15,8 +15,8 @@
 
 body{
     background-color: #121212;
-    width: 100%;
     overflow-x: hidden;
+    width: 100%;
 }
 
 /****************************************** DESKTOP ********************************************/
@@ -26,7 +26,9 @@ body{
 /* header desktop div */
 .header__desktop--background{
     width: 100%;
+    position: fixed;
     display: flex;
+    z-index: 20;
     flex-direction: row;
     height: 4.5rem;
     backdrop-filter: blur(140px);
@@ -113,13 +115,13 @@ body{
 }
 .header__desktop--btn-facebook{
     text-decoration: none;
-    width: 3rem;
-    height: 2.4rem;
+    width: 2.9rem;
+    height: 2.3rem;
     align-items: center;
     border-radius: 50%;
     border: 1px solid white;
     color: white;
-    font-size: 1.3rem;
+    font-size: 1.25rem;
     transition: 0.2s;
     display: flex;
     justify-content: center;
@@ -130,11 +132,11 @@ body{
 }
 .header__desktop--btn-instagram{
     text-decoration: none;
-    width: 3rem;
+    width: 2.9rem;
     margin-left: 1rem;
     margin-right: 1rem;
-    height: 2.4rem;
-    font-size: 1.3rem;
+    height: 2.3rem;
+    font-size: 1.25rem;
     align-items: center;
     border-radius: 50%;
     border: 1px solid white;
@@ -151,10 +153,10 @@ body{
     text-decoration: none;
     display: flex;
     justify-content: center;
-    width: 3rem;
+    width: 2.9rem;
     color: white;
-    font-size: 1.3rem;
-    height: 2.4rem;
+    font-size: 1.25rem;
+    height: 2.3rem;
     transition: 0.2s;
     align-items: center;
     border-radius: 50%;
@@ -173,21 +175,223 @@ body{
 .main-desktop{
     height: 303rem;
 }
+
+/* seccion inicio */
 .seccion-inicio{
     height: 36.3rem;
 }
+
+/* seccion productos */
 .seccion-productos{
     height: 53.3rem;
 }
+
+/* seccion que hacemos */
 .seccion-que-hacemos{
     height: 59rem;
 }
+
+/* seccion equipo */
 .seccion-equipo{
-    height: 74.3rem;
+    position: relative;
+    height: 73rem;
 }
+.h2-equipo{
+    font-family: 'Metropolis Black';
+    color: white;
+    font-size: 2.3rem;
+    position: relative;
+    top: 5rem;
+    text-align: center;
+}
+.div-grid-equipo{
+    width: 60%;
+    position: relative;
+    left: 20%;
+    top: 5rem;
+    display: grid;
+    height: 61rem;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 33,3% 33,3% 33,3%;
+    grid-template-areas: 
+                        "div-equipo-miguel div-equipo-rita"
+                        "div-equipo-manuel div-equipo-santiago"
+                        "div-equipo-tomas div-equipo-tomas"
+                        ;
+}
+.div-equipo-miguel{
+    grid-area: div-equipo-miguel;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.div-equipo-rita{
+    grid-area: div-equipo-rita;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.div-equipo-manuel{
+    grid-area: div-equipo-manuel;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.div-equipo-santiago{
+    grid-area: div-equipo-santiago;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.div-equipo-tomas{
+    grid-area: div-equipo-tomas;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.div-img-equipo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%;
+    background-color: white;
+}
+.img-equipo{
+    width: 10.5rem;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+}
+.p-equipo-nombre{
+    font-family: 'Metropolis Black';
+    color: white;
+    font-size: 1.1rem;
+    text-align: center;
+    position: relative;
+    top: 1.3rem;
+}
+.p-equipo{
+    font-family: 'Metropolis Medium';
+    color: white;
+    font-size: 1.1rem;
+    text-align: center;
+    position: relative;
+    top: 0.9rem;
+}
+.equipo-forma-1{
+    display: flex;
+    position: absolute;
+    top: 5rem;
+}
+.equipo-forma-2{
+    float: right;
+    position: relative;
+    bottom: 15rem;
+}
+.equipo-forma-mobile{
+    visibility: hidden;
+    opacity: 0;
+}
+.equipo-desktop-f{
+    width: 17rem;
+}
+
+/* seccion aliados */
 .seccion-aliados{
     height: 31rem;
+    width: 100%;
 }
+.div-top-aliados{
+    height: 3rem;
+    justify-self: flex-start;
+    background-color: #146EAC;
+}
+.aliados-logos{
+    height: 25rem;
+    position: relative;
+    width: 100%;
+}
+.div-h2-aliados{
+    height: 32%;
+    width: 100%;
+}
+.h2-aliados{
+    font-family: 'Metropolis Black';
+    width: 70%;
+    position: relative;
+    left: 15%;
+    text-align: center;
+    font-size: 2.3rem;
+    color: white;
+    top: 3rem;
+}
+.div-logos-aliados{
+    height: 68%;
+}
+.contenedor-white-aliados{
+    background-color: white;
+    width: 80%;
+    position: relative;
+    top: 2rem;
+    left: 10%;
+    height: 8rem;
+    border-radius: 1rem;
+    display: grid;
+    grid-template-rows: 100%;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: 16.6% 16.6% 16.6% 16.6% 16.6% 16.6%;
+    grid-template-areas: "div-icon-aliados-b div-icon-aliados-3d div-icon-aliados-c div-icon-aliados-m div-icon-aliados-p div-icon-aliados-t";
+}
+.div-icon-aliados-b{
+    grid-area: div-icon-aliados-b;
+}
+.logo-aliados-bizarro{
+    width: 7.5rem;
+}
+.div-icon-aliados-3d{
+    grid-area: div-icon-aliados-3d;
+}
+.logo-aliados-che3d{
+    width: 9rem;
+}
+.div-icon-aliados-c{
+    grid-area: div-icon-aliados-c;
+}
+.logo-aliados-creatibe{
+    width: 8rem;
+}
+.div-icon-aliados-m{
+    grid-area: div-icon-aliados-m;
+}
+.logo-aliados-municipalidad{
+    width: 9rem;
+}
+.div-icon-aliados-p{
+    grid-area: div-icon-aliados-p;
+}
+.logo-aliados-peek{
+    width: 5rem;
+}
+.div-icon-aliados-t{
+    grid-area: div-icon-aliados-t;
+}
+.logo-aliados-telefonica{
+    width: 6.5rem;
+}
+.div-bottom-aliados{
+    height: 3rem;
+    position: relative;
+    background-color: #146EAC;
+}
+
+/* seccion form */
 .seccion-form{
     height: 49rem;
 }
@@ -200,10 +404,9 @@ body{
     position: fixed;
     display: flex;
     justify-content: center;
-    align-items: center;
     top: 88vh;
     width: 3rem;
-    height: 3rem;
+    height: 3.2rem;
     z-index: 3;
     border-radius: 50%;
     background-color: #1fbb58;
@@ -213,12 +416,19 @@ body{
 .div-whatsapp-btn:hover{
     background-color: #25D366;
 }
-.a-btn-whatsapp{
+.btn-whatsapp{
+    width: 3rem;
+    height: 3.15rem;
+    border-radius: 50%;
+    background-color: #12121200;
+    border: none;
+}
+.span-whatsapp{
     font-size: 2.2rem;
     color: rgb(255, 255, 255);
     text-decoration: none;
 }
-.a-btn-whatsapp:hover{
+.span-whatsapp:hover{
     color: rgb(255, 255, 255);
 }
 
@@ -376,6 +586,11 @@ body{
 
 /* header 900px */
 
+@media screen and (max-width:1366px){
+    .contenedor-white-aliados{
+        top: 0.4rem;
+    }
+}
 @media screen and (max-width:991px){
 
     
@@ -400,12 +615,39 @@ body{
         transition: 0.3s;
         text-decoration: none;
     }
+    .equipo-forma-1{
+        display: flex;
+        position: absolute;
+        top: 5rem;
+    }
+    .equipo-desktop-f{
+        width: 12.5rem;
+    }
+    .contenedor-white-aliados{
+        width: 90%;
+        left: 5%;
+        top: 2rem;
+    }
+    .logo-aliados-bizarro{
+        width: 6.5rem;
+    }
+    .logo-aliados-che3d{
+        width: 8rem;
+    }
+    .logo-aliados-creatibe{
+        width: 7rem;
+    }
+    .logo-aliados-municipalidad{
+        width: 8rem;
+    }
+    .logo-aliados-peek{
+        width: 4rem;
+    }
+    .logo-aliados-telefonica{
+        width: 5.5rem;
+    }
     .div-whatsapp-btn{
         left: 89vw;
-        top: 87vh;
-        width: 3rem;
-        height: 3rem;
-        box-shadow: 0px 12px 15px rgba(0, 0, 0, 0.3);
     }
     .footer__forma--2{
         width: 2rem;
@@ -433,9 +675,11 @@ body{
     }
 
     .header__mobile--background{
+        position: fixed;
         display: flex;
         width: 100%;
         flex-direction: row;
+        z-index: 20;
         height: 3.5rem;
         background-color: #121212;
     }
@@ -478,7 +722,7 @@ body{
         position: relative;
         left: 0;
         z-index: 2;
-        width: 18rem;
+        width: 17rem;
         height: 24rem;
         background-color: #232323;
         display: flex;
@@ -536,31 +780,19 @@ body{
         left: 0;
         width: 15rem;
         display: flex;
-        justify-content: center;
-        align-items: center;
     }
     .header__mobile--redes-flex{
-        width: 9rem;
+        width: 11rem;
         height: 50%;
         display: flex;
+        position: relative;
+        left: 1.5rem;
         align-items: center;
         justify-content: center;
     }
-    .header__mobile--btn-facebook{
-        width: 2.8rem;
-        height: 2.2rem;
-    }
-    .header__mobile--btn-instagram{
-        width: 2.8rem;
-        height: 2.2rem;
-    }
-    .header__mobile--btn-twiter{
-        width: 2.8rem;
-        height: 2.2rem;
-    }
-    .header__mobile--btn-cafecito{
-        width: 2.8rem;
-        height: 2.2rem;
+    .header__mobile--btn{
+        width: 2.6rem;
+        height: 2rem;
     }
 
     /* header mobile logo */
@@ -578,23 +810,171 @@ body{
     /* SECCIONES MOBILE */
 
     .main-mobile{
-        height: 274.4rem;
+        height: 275rem;
     }
+
+    /* seccion inicio mobile */
     .seccion-inicio{
         height: 36.3rem;
     }
+
+    /* seccion productos mobile */
     .seccion-productos{
         height: 79.5rem;
     }
+
+    /* seccion que hacemos mobile */
     .seccion-que-hacemos{
         height: 65rem;
     }
+
+    /* seccion equipo mobile */
     .seccion-equipo{
-        height: 42rem;
+        height: 45rem;
     }
+    .h2-equipo{
+        font-family: 'Metropolis Black';
+        color: white;
+        top: 0;
+        font-size: 1.6rem;
+        text-align: center;
+    }
+    .div-grid-equipo{
+        width: 90%;
+        position: relative;
+        left: 5%;
+        top: 1rem;
+        display: grid;
+        height: 39.5rem;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 33,3% 33,3% 33,3%;
+        grid-template-areas: 
+                            "div-equipo-miguel div-equipo-rita"
+                            "div-equipo-manuel div-equipo-santiago"
+                            "div-equipo-tomas div-equipo-tomas"
+                            ;
+    }
+    .div-img-equipo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 8.5rem;
+        height: 8.5rem;
+        border-radius: 50%;
+        background-color: white;
+    }
+    .img-equipo{
+        width: 7.3rem;
+        box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+        border-radius: 50%;
+    }
+    .p-equipo-nombre{
+        font-family: 'Metropolis Black';
+        color: white;
+        font-size: 0.8rem;
+        text-align: center;
+        position: relative;
+        top: 0.5rem;
+    }
+    .p-equipo{
+        font-family: 'Metropolis Medium';
+        color: white;
+        font-size: 0.8rem;
+        text-align: center;
+        position: relative;
+        top: 0rem;
+    }
+    .equipo-forma-1{
+        display: none;
+    }
+    .equipo-forma-2{
+        display: none;
+    }
+    .equipo-forma-mobile{
+        position: relative;
+        bottom: 1rem;
+        float: right;
+        visibility: visible;
+        opacity: 1;
+    }
+    .equipo-mobile-f{
+        width: 7rem;
+        position: relative;
+        bottom: 4.5rem;
+    }
+
+    /* seccion aliados mobile */
     .seccion-aliados{
         height: 15rem;
     }
+    .div-top-aliados{
+        height: 1.5rem;
+        justify-self: flex-start;
+        background-color: #146EAC;
+    }
+    .aliados-logos{
+        height: 12rem;
+        position: relative;
+        width: 100%;
+    }
+    .div-h2-aliados{
+        height: 35%;
+        width: 100%;
+    }
+    .h2-aliados{
+        font-family: 'Metropolis Black';
+        width: 70%;
+        position: relative;
+        left: 15%;
+        text-align: center;
+        font-size: 1.6rem;
+        color: white;
+        top: 0.5rem;
+    }
+    .div-logos-aliados{
+        height: 65%;
+    }
+    .contenedor-white-aliados{
+        background-color: white;
+        width: 80%;
+        position: relative;
+        top: 0;
+        left: 10%;
+        height: 6rem;
+        border-radius: 1rem;
+        display: grid;
+        align-items: center;
+        justify-items: center;
+        grid-template-columns: 33.3% 33.3% 33.3%;
+        grid-template-rows: 50% 50%;
+        grid-template-areas: "div-icon-aliados-b div-icon-aliados-3d div-icon-aliados-c"
+                             "div-icon-aliados-m div-icon-aliados-p div-icon-aliados-t";
+    }
+    .logo-aliados-bizarro{
+        width: 4rem;
+    }
+    .logo-aliados-che3d{
+        width: 5.5rem;
+    }
+    .logo-aliados-creatibe{
+        width: 4.5rem;
+    }
+    .logo-aliados-municipalidad{
+        width: 4.5rem;
+    }
+    .logo-aliados-peek{
+        width: 1.5rem;
+    }
+    .logo-aliados-telefonica{
+        width: 3rem;
+    }
+    .div-bottom-aliados{
+        height: 1.5rem;
+        position: relative;
+        background-color: #146EAC;
+    }
+
+    /* seccion form */
     .seccion-form{
         height: 36.5rem;
     }
@@ -605,18 +985,25 @@ body{
         left: 80vw;
         top: 89vh;
         width: 2.8rem;
-        height: 2.8rem;
+        height: 2.9rem;
         box-shadow: 0px 12px 15px rgba(0, 0, 0, 0.3);
+    }
+    .btn-whatsapp{
+        width: 2.8rem;
+        height: 2.9rem;
+        border-radius: 50%;
+        background-color: #12121200;
+        border: none;
     }
     .div-whatsapp-btn:hover{
         background-color: #25D366;
     }
-    .a-btn-whatsapp{
+    .span-whatsapp{
         font-size: 2rem;
         color: rgb(255, 255, 255);
         text-decoration: none;
     }
-    .a-btn-whatsapp:hover{
+    .span-whatsapp:hover{
         color: rgb(255, 255, 255);
     }
 
@@ -786,6 +1173,45 @@ body{
 
         .div-whatsapp-btn{
             left: 88vw;
+            top: 89vh;
+            width: 2.8rem;
+            height: 2.9rem;
+        }
+        .btn-whatsapp{
+            width: 2.8rem;
+            height: 2.9rem;
+        }
+        .div-h2-aliados{
+            height: 27%;
+        }
+        .h2-aliados{
+            top: 0.8rem;
+        }
+        .div-logos-aliados{
+            height: 73%;
+        }
+        .contenedor-white-aliados{
+            position: absolute;
+            top: 3.5rem;
+            height: 7rem;
+        }
+        .logo-aliados-bizarro{
+            width: 5rem;
+        }
+        .logo-aliados-che3d{
+            width: 6.5rem;
+        }
+        .logo-aliados-creatibe{
+            width: 5.5rem;
+        }
+        .logo-aliados-municipalidad{
+            width: 5.5rem;
+        }
+        .logo-aliados-peek{
+            width: 2.5rem;
+        }
+        .logo-aliados-telefonica{
+            width: 4rem;
         }
         .footer__copyright--p{
             text-align: center;
@@ -798,6 +1224,14 @@ body{
         .footer__forma--1{
             position: absolute;
             margin-top: 30.1rem;
+        }
+        .equipo-forma-mobile{
+            bottom: 8.5rem;
+            visibility: visible;
+            opacity: 1;
+        }
+        .equipo-mobile-f{
+            width: 11rem;
         }
     }
 }

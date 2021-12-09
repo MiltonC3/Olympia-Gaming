@@ -45,7 +45,7 @@ function scrollNavBar(pClass){
     
         }
     
-        if($(`#div-header-${pClass}`).offset().top > 2300){
+        if($(`#div-header-${pClass}`).offset().top > 2250){
     
             $(`.nav__${pClass}--a-que-hacemos`).removeClass(`li-active-${pClass}`)
     
@@ -57,7 +57,7 @@ function scrollNavBar(pClass){
     
         }
     
-        if($(`#div-header-${pClass}`).offset().top > 3550){
+        if($(`#div-header-${pClass}`).offset().top > 3475){
     
             $(`.nav__${pClass}--a-equipo`).removeClass(`li-active-${pClass}`)
     
@@ -68,7 +68,7 @@ function scrollNavBar(pClass){
             $(`.nav__${pClass}--a-aliados`).removeClass(`li-active-${pClass}`)
     
         }
-        if($(`#div-header-${pClass}`).offset().top > 4000){
+        if($(`#div-header-${pClass}`).offset().top > 3980){
     
             $(`.nav__${pClass}--a-aliados`).removeClass(`li-active-${pClass}`)
     
@@ -107,7 +107,7 @@ function scrollNavBar(pClass){
     
         }
     
-        if($(`#div-header-${pClass}`).offset().top > 2850){
+        if($(`#div-header-${pClass}`).offset().top > 2820){
     
             $(`.nav__${pClass}--a-que-hacemos`).removeClass(`li-active-${pClass}`)
     
@@ -119,7 +119,7 @@ function scrollNavBar(pClass){
     
         }
     
-        if($(`#div-header-${pClass}`).offset().top > 3500){
+        if($(`#div-header-${pClass}`).offset().top > 3540){
     
             $(`.nav__${pClass}--a-equipo`).removeClass(`li-active-${pClass}`)
     
