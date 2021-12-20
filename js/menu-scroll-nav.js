@@ -33,7 +33,7 @@ function scrollNavBar(pClass){
             
         }
     
-        if($(`#div-header-${pClass}`).offset().top > 1400){
+        if($(`#div-header-${pClass}`).offset().top > 1370){
     
             $(`.nav__${pClass}--a-productos`).removeClass(`li-active-${pClass}`)
     
@@ -45,7 +45,7 @@ function scrollNavBar(pClass){
     
         }
     
-        if($(`#div-header-${pClass}`).offset().top > 2250){
+        if($(`#div-header-${pClass}`).offset().top > 2260){
     
             $(`.nav__${pClass}--a-que-hacemos`).removeClass(`li-active-${pClass}`)
     
@@ -57,7 +57,7 @@ function scrollNavBar(pClass){
     
         }
     
-        if($(`#div-header-${pClass}`).offset().top > 3475){
+        if($(`#div-header-${pClass}`).offset().top > 3470){
     
             $(`.nav__${pClass}--a-equipo`).removeClass(`li-active-${pClass}`)
     
@@ -68,7 +68,7 @@ function scrollNavBar(pClass){
             $(`.nav__${pClass}--a-aliados`).removeClass(`li-active-${pClass}`)
     
         }
-        if($(`#div-header-${pClass}`).offset().top > 3980){
+        if($(`#div-header-${pClass}`).offset().top > 3975){
     
             $(`.nav__${pClass}--a-aliados`).removeClass(`li-active-${pClass}`)
     
@@ -95,7 +95,7 @@ function scrollNavBar(pClass){
             
         }
     
-        if($(`#div-header-${pClass}`).offset().top > 1850){
+        if($(`#div-header-${pClass}`).offset().top > 1760){
     
             $(`.nav__${pClass}--a-productos`).removeClass(`li-active-${pClass}`)
     
@@ -119,7 +119,7 @@ function scrollNavBar(pClass){
     
         }
     
-        if($(`#div-header-${pClass}`).offset().top > 3540){
+        if($(`#div-header-${pClass}`).offset().top > 3550){
     
             $(`.nav__${pClass}--a-equipo`).removeClass(`li-active-${pClass}`)
     

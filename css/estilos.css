@@ -54,7 +54,7 @@ body{
     list-style: none;
     flex-direction: row;
     position: relative;
-    top: 0.55rem;
+    top: 0.6rem;
     align-items: center;
 }
 .nav__desktop--li{
@@ -64,7 +64,7 @@ body{
 .nav__desktop--a{
     font-family: 'Metropolis Medium';
     color: white;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     transition: 0.3s;
     text-decoration: none;
 }
@@ -95,7 +95,7 @@ body{
 .li-active-desktop{
     color: #AB2123;
     font-family: 'Metropolis Medium';
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     text-decoration: none;
 }
 /* header redes */
@@ -175,30 +175,265 @@ body{
     height: 303rem;
 }
 
-/* seccion inicio */
+/* SECCION INICIO */
+
 .seccion-inicio{
     height: 36.3rem;
+    display: flex;
+    justify-content: center;
+}
+.div-inicio-grid{
+    position: relative;
+    top: 7rem;
+    width: 68rem;
+    height: 27rem;
+    display: grid;
+    grid-template-columns: 34rem 34rem;
+    grid-template-rows: 40% 40% 20%;
+    grid-template-areas: 
+                        "div-h2-inicio div-img-inicio"
+                        "div-h3-inicio div-img-inicio"
+                        "div-btn-inicio div-img-inicio";
+}
+.div-h2-inicio{
+    grid-area: div-h2-inicio;
+    align-self: center;
+}
+.h2-inicio{
+    color: white;
+    font-family: 'Metropolis Black';
+    font-size: 3.75rem;
+}
+.div-h3-inicio{
+    grid-area: div-h3-inicio;
+}
+.h3-inicio{
+    color: white;
+    margin-top: 1rem;
+    font-family: 'Metropolis Black';
+    font-size: 2rem;
+}
+.div-btn-inicio{
+    grid-area: div-btn-inicio;
+}
+.btn-inicio{
+    margin-top: 1rem;
+    border-radius: 1rem;
+    width: 15rem;
+    height: 3.5rem;
+    border: none;
+    color: rgb(255, 255, 255);
+    font-family: 'Metropolis Medium';
+    background-color: #AB2123;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+}
+.div-img-inicio{
+    grid-area: div-img-inicio;
+    align-self: center;
+}
+.img-inicio{
+    width: 33.5rem;
+    border-radius: 1rem;
+    position: relative;
+    top: 1rem;
 }
 
-/* seccion productos */
+/* SECCION PRODUCTOS */
+
 .seccion-productos{
-    height: 53.3rem;
+    height: 50rem;
+}
+.h2-productos{
+    font-family: 'Metropolis Black';
+    color: white;
+    font-size: 3rem;
+    position: relative;
+    top: 5rem;
+    text-align: center;
+}
+.position-row-productos{
+    position: relative;
+    top: 8rem;
+}
+.div-row-productos{
+    position: relative;
+    width: 70rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.div-switch-flex{
+    width: 33.3%;
+    display: flex;
+    justify-content: center;
+}
+.container-card{
+    width: 21rem;
+    height: 31rem;
+    display: flex;
+    align-items: center;
+    background-color: #232323;
+    border-radius: 1rem;
+}
+.img-productos{
+    border-radius: 1rem;
+    width: 18.35rem;
+    height: 14.6rem;
+    margin-top: 2rem;
+}
+.title-card-productos{
+    color: #AB2123;
+    font-size: 1.3rem;
+    font-family: 'Metropolis Black';
+    text-align: center;
+}
+.p-switch{
+    font-size: 1.2rem;
+    font-family: 'Metropolis Medium';
+    text-align: center;
+    color: white;
+}
+.p-switch-abajo{
+    font-size: 0.9rem;
+    font-family: 'Metropolis Medium';
+    color: rgb(233, 233, 233);
+    text-align: center;
 }
 
-/* seccion que hacemos */
+/* SECCION QUE HACEMOS */
 .seccion-que-hacemos{
-    height: 59rem;
+    height: 57rem;
+}
+.h2-que-hacemos{
+    font-family: 'Metropolis Black';
+    color: white;
+    position: relative;
+    top: 5.5rem;
+    font-size: 3rem;
+    text-align: center;
+}
+.h4-que-hacemos{
+    position: relative;
+    left: 20%;
+    width: 60%;
+    top: 6rem;
+    font-size: 1.5rem;
+    font-family: 'Metropolis Black';
+    color: white;
+    text-align: center;
+}
+.container-div-que-hacemos{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    position: absolute;
+    top: 109rem;
+    height: 31rem;
+}
+.flex-div1-que-hacemos{
+    width: 33.3%;
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+}
+.div-1-que-hacemos{
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    background: rgb(171,33,35);
+    background: linear-gradient(180deg, rgba(171,33,35,1) 0%, rgba(20,110,172,1) 100%);
+    width: 22rem;
+    height: 28rem;
+}
+.flex-div2-que-hacemos{
+    width: 33.3%;
+    display: flex;
+    justify-content: center;
+}
+.div-2-que-hacemos{
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    background: rgb(171,33,35);
+    background: linear-gradient(180deg, rgba(171,33,35,1) 0%, rgba(20,110,172,1) 100%);
+    width: 22rem;
+    height: 31rem;
+}
+.flex-div3-que-hacemos{
+    width: 33.3%;
+    display: flex;
+    justify-content: start;
+    align-items: flex-end;
+}
+.div-3-que-hacemos{
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    background: rgb(171,33,35);
+    background: linear-gradient(180deg, rgba(171,33,35,1) 0%, rgba(20,110,172,1) 100%);
+    width: 22rem;
+    height: 28rem;
+}
+.h5-que-hacemos{
+    text-align: center;
+    font-family: 'Metropolis Black';
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+}
+.p-que-hacemos{
+    position: relative;
+    left: 10%;
+    width: 80%;
+    margin-top: 1.1rem;
+    text-align: center;
+    font-family: 'Metropolis Medium';
+    color: rgb(233, 233, 233);
+}
+.forma-1-que-hacemos{
+    -webkit-transform: matrix(-1, 0, 0, 1, 0, 0);
+    -moz-transform: matrix(-1, 0, 0, 1, 0, 0);
+    -o-transform: matrix(-1, 0, 0, 1, 0, 0);
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+    position: absolute;
+    top: 92rem;
+    width: 27rem;
+    z-index: -1;
+    float: left;
+}
+.forma-2-que-hacemos{
+    position: absolute;
+    width: 27rem;
+    z-index: -1;
+    top: 92rem;
+    right: 0;
+}
+.div-bottom-1-degradado{
+    position: absolute;
+    top: 140rem;
+    height: 1.75rem;
+    width: 100%;
+    background: rgba(20,110,172,1);
+    background: linear-gradient(0deg, rgba(171,33,35,1) 10%, rgba(20,110,172,1) 90%);
+}
+.div-bottom-2-degradado{
+    position: absolute;
+    top: 141.5rem;
+    height: 1.75rem;
+    width: 100%;
+    background: rgba(20,110,172,1);
+    background: linear-gradient(180deg, rgba(171,33,35,1) 10%, rgba(20,110,172,1) 90%);
 }
 
-/* seccion equipo */
+/* SECCION EQUIPO */
+
 .seccion-equipo{
     position: relative;
-    height: 73rem;
+    height: 75rem;
 }
 .h2-equipo{
     font-family: 'Metropolis Black';
     color: white;
-    font-size: 2.3rem;
+    font-size: 3rem;
     position: relative;
     top: 5rem;
     text-align: center;
@@ -270,7 +505,7 @@ body{
 .p-equipo-nombre{
     font-family: 'Metropolis Black';
     color: white;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     text-align: center;
     position: relative;
     top: 1.3rem;
@@ -278,7 +513,7 @@ body{
 .p-equipo{
     font-family: 'Metropolis Medium';
     color: white;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     text-align: center;
     position: relative;
     top: 0.9rem;
@@ -326,7 +561,7 @@ body{
     position: relative;
     left: 15%;
     text-align: center;
-    font-size: 2.3rem;
+    font-size: 3rem;
     color: white;
     top: 3rem;
 }
@@ -390,7 +625,7 @@ body{
     background-color: #146EAC;
 }
 
-/* seccion form */
+/* SECCION FORMULARIO */
 .seccion-form{
     height: 49rem;
 }
@@ -585,12 +820,117 @@ body{
 
 /* header 900px */
 
-@media screen and (max-width:1366px){
+@media screen and (min-width:992px) and (max-width:1366px){
     .contenedor-white-aliados{
         top: 0.4rem;
     }
+    .seccion-inicio{
+        height: 36.3rem;
+        display: flex;
+        justify-content: center;
+    }
+    .div-inicio-grid{
+        position: relative;
+        top: 7rem;
+        width: 59rem;
+        height: 27rem;
+        display: grid;
+        grid-template-columns: 29.5rem 29.5rem;
+    }
+    .h2-inicio{
+        font-size: 3.2rem;
+    }
+    .h3-inicio{
+        font-size: 1.8rem;
+    }
+    .btn-inicio{
+        width: 13rem;
+        height: 3.3rem;
+    }
+    .div-img-inicio{
+        justify-self: center;
+        align-self: center;
+    }
+    .img-inicio{
+        width: 28rem;
+        border-radius: 1rem;
+    }
+    .div-row-productos{
+        width: 60rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .div-switch-flex{
+        width: 33.3%;
+    }
+    .container-card{
+        width: 17.5rem;
+        height: 28rem;
+    }
+    .img-productos{
+        border-radius: 1rem;
+        width: 16.35rem;
+        height: 11rem;
+        margin-top: 2rem;
+    }
+    .title-card-productos{
+        font-size: 1.2rem;
+    }
+    .p-switch{
+        font-size: 1.1rem;
+    }
+    .p-switch-abajo{
+        font-size: 0.8rem;
+        font-family: 'Metropolis Medium';
+        color: rgb(233, 233, 233);
+        text-align: center;
+    }
+    .h4-que-hacemos{
+        left: 10%;
+        width: 80%;
+    }
+    .container-div-que-hacemos{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: center;
+        position: absolute;
+        top: 109rem;
+        height: 31rem;
+    }
+    .flex-div1-que-hacemos{
+        width: 33.3%;
+        display: flex;
+        justify-content: end;
+        align-items: flex-end;
+    }
+    .div-1-que-hacemos{
+        width: 19rem;
+        height: 25rem;
+    }
+    .flex-div2-que-hacemos{
+        width: 33.3%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+    .div-2-que-hacemos{
+        width: 19rem;
+        height: 28rem;
+    }
+    .flex-div3-que-hacemos{
+        width: 33.3%;
+        display: flex;
+        justify-content: start;
+        align-items: flex-end;
+    }
+    .div-3-que-hacemos{
+        width: 19rem;
+        height: 25rem;
+    }
 }
-@media screen and (max-width:991px){
+@media screen and (min-width:787px) and (max-width:991px){
 
     
     .header__mobile--background{
@@ -613,6 +953,112 @@ body{
         font-size: 1rem;
         transition: 0.3s;
         text-decoration: none;
+    }
+    .div-inicio-grid{
+        position: relative;
+        top: 8rem;
+        width: 48rem;
+        height: 22rem;
+        display: grid;
+        grid-template-columns: 24rem 24rem;
+    }
+    .h2-inicio{
+        font-size: 2.5rem;
+    }
+    .h3-inicio{
+        margin-top: 1rem;
+        font-size: 1.6rem;
+    }
+    .btn-inicio{
+        width: 12rem;
+        height: 3rem;
+    }
+    .img-inicio{
+        width: 23.5rem;
+        border-radius: 1rem;
+    }
+    .div-row-productos{
+        width: 50rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .div-switch-flex{
+        width: 33.3%;
+    }
+    .container-card{
+        width: 16rem;
+        height: 25rem;
+    }
+    .img-productos{
+        border-radius: 1rem;
+        width: 15rem;
+        height: 10rem;
+        margin-top: 2rem;
+    }
+    .title-card-productos{
+        font-size: 1.15rem;
+    }
+    .p-switch{
+        font-size: 1.05rem;
+    }
+    .h4-que-hacemos{
+        margin-top: 2rem;
+        left: 10%;
+        width: 80%;
+    }
+    .container-div-que-hacemos{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: center;
+        position: absolute;
+        top: 109rem;
+        height: 31rem;
+    }
+    .flex-div1-que-hacemos{
+        width: 33.3%;
+        display: flex;
+        justify-content: end;
+        align-items: flex-end;
+    }
+    .div-1-que-hacemos{
+        width: 16rem;
+        height: 21rem;
+    }
+    .flex-div2-que-hacemos{
+        width: 33.3%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+    .div-2-que-hacemos{
+        width: 16rem;
+        height: 24rem;
+    }
+    .flex-div3-que-hacemos{
+        width: 33.3%;
+        display: flex;
+        justify-content: start;
+        align-items: flex-end;
+    }
+    .div-3-que-hacemos{
+        width: 16rem;
+        height: 21rem;
+    }
+    .forma-1-que-hacemos{
+        top: 99rem;
+        width: 23rem;
+    }
+    .forma-2-que-hacemos{
+        width: 23rem;
+        top: 99rem;
+    }
+    .p-switch-abajo{
+        font-size: 0.75rem;
+        font-family: 'Metropolis Medium';
+        color: rgb(233, 233, 233);
+        text-align: center;
     }
     .equipo-forma-1{
         display: flex;
@@ -813,22 +1259,234 @@ body{
         height: 275rem;
     }
 
-    /* seccion inicio mobile */
+    /* SECCION INICIO MOBILE */
     .seccion-inicio{
         height: 36.3rem;
     }
+    .div-inicio-grid{
+        position: relative;
+        top: 5rem;
+        width: 80%;
+        height: 31rem;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 20% 46% 22% 12%;
+        grid-template-areas: 
+                            "div-h2-inicio"
+                            "div-img-inicio"
+                            "div-h3-inicio"
+                            "div-btn-inicio";
+    }
+    .div-h2-inicio{
+        grid-area: div-h2-inicio;
+        align-self: center;
+        display: flex;
+        justify-content: center;
+    }
+    .h2-inicio{
+        color: white;
+        width: 90%;
+        text-align: center;
+        font-family: 'Metropolis Black';
+        font-size: 2rem;
+    }
+    .div-h3-inicio{
+        grid-area: div-h3-inicio;
+        display: flex;
+        justify-content: center;
+        align-self: center;
+    }
+    .h3-inicio{
+        color: white;
+        width: 90%;
+        font-family: 'Metropolis Black';
+        font-size: 1.25rem;
+        text-align: center;
+        margin-top: 0;
+    }
+    .div-btn-inicio{
+        grid-area: div-btn-inicio;
+        justify-self: center;
+    }
+    .btn-inicio{
+        border-radius: 1rem;
+        width: 10rem;
+        height: 2.8rem;
+        margin-top: 0;
+        border: none;
+        color: rgb(255, 255, 255);
+        font-family: 'Metropolis Medium';
+        background-color: #AB2123;
+        box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+    }
+    .div-img-inicio{
+        grid-area: div-img-inicio;
+        justify-self: center;
+    }
+    .img-inicio{
+        width: 19rem;
+        border-radius: 1rem;
+        top: 0;
+    }
 
-    /* seccion productos mobile */
+    /* SECCION PRODUCTOS MOBILE */
     .seccion-productos{
         height: 79.5rem;
     }
+    .h2-productos{
+        font-family: 'Metropolis Black';
+        color: white;
+        font-size: 1.6rem;
+        position: relative;
+        top: 2rem;
+        text-align: center;
+    }
+    .position-row-productos{
+        position: relative;
+        top: 4rem;
+    }
+    .div-row-productos{
+        position: relative;
+        width: 100%;
+        height: 69rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .div-switch-flex{
+        width: 100%;
+        height: 33.3%;
+        display: flex;
+        align-items: center;
+    }
+    .container-card{
+        width: 19rem;
+        height: 22rem;
+        display: flex;
+        align-items: center;
+        background-color: #232323;
+        border-radius: 1rem;
+    }
+    .img-productos{
+        border-radius: 1rem;
+        width: 16.5rem;
+        height: 11rem;
+        margin-top: 1rem;
+    }
+    .title-card-productos{
+        color: #AB2123;
+        font-size: 1.2rem;
+        font-family: 'Metropolis Black';
+        text-align: center;
+    }
+    .p-switch{
+        font-size: 1.05rem;
+        font-family: 'Metropolis Medium';
+        text-align: center;
+        color: white;
+    }
+    .p-switch-abajo{
+        font-size: 0.7rem;
+        font-family: 'Metropolis Medium';
+        color: rgb(233, 233, 233);
+        text-align: center;
+    }
 
-    /* seccion que hacemos mobile */
+    /* SECCION QUE HACEMOS MOBILE */
     .seccion-que-hacemos{
         height: 65rem;
     }
+    .h2-que-hacemos{
+        top: 1rem;
+        font-size: 1.6rem;
+    }
+    .h4-que-hacemos{
+        left: 5%;
+        width: 90%;
+        top: 4rem;
+        font-size: 1.2rem;
+    }
+    .container-div-que-hacemos{
+        display: flex;
+        flex-direction: column;
+        left: 15%;
+        width: 70%;
+        background: rgb(171,33,35);
+        background: linear-gradient(180deg, rgba(171,33,35,1) 0%, rgba(20,110,172,1) 100%);
+        justify-content: center;
+        border-radius: 2rem;
+        position: absolute;
+        top: 136rem;
+        height: 40rem;
+    }
+    .flex-div1-que-hacemos{
+        height: 39%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .div-1-que-hacemos{
+        background-color: #12121200;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%);
+        height: 100%;
+        width: 100%;
+    }
+    .flex-div2-que-hacemos{
+        height: 26%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .div-2-que-hacemos{
+        background-color: #12121200;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%);
+        height: 100%;
+        width: 100%;
+    }
+    .flex-div3-que-hacemos{
+        height: 35%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .div-3-que-hacemos{
+        background-color: #12121200;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%);
+        height: 100%;
+        width: 100%;
+    }
+    .h5-que-hacemos{
+        font-size: 1.2rem;
+        margin-top: 2rem;
+    }
+    .p-que-hacemos{
+        position: relative;
+        left: 5%;
+        width: 90%;
+        margin-top: 0.8rem;
+    }
+    .forma-1-que-hacemos{
+        top: 115rem;
+        width: 10rem;
+    }
+    .forma-2-que-hacemos{
+        width: 10rem;
+        top: 115rem;
+    }
+    .div-bottom-1-degradado{
+        top: 132.8rem;
+        height: 0.5rem;
+    }
+    .div-bottom-2-degradado{
+        top: 133.3rem;
+        height: 0.5rem;
+    }
 
-    /* seccion equipo mobile */
+    /* SECCION EQUIPO MOBILE */
     .seccion-equipo{
         height: 45rem;
     }
@@ -903,7 +1561,7 @@ body{
         bottom: 4.5rem;
     }
 
-    /* seccion aliados mobile */
+    /* SECCION ALIADOS MOBILE */
     .seccion-aliados{
         height: 15rem;
     }
@@ -974,7 +1632,7 @@ body{
         background-color: #146EAC;
     }
 
-    /* seccion form */
+    /* SECCION FORMULARIO */
     .seccion-form{
         height: 36.5rem;
     }
@@ -1157,7 +1815,7 @@ body{
     }
     .footer__forma--2{
         position: absolute;
-        left: 30%;
+        left: 15%;
     }
     .footer__forma--3{
         position: absolute;
@@ -1168,8 +1826,184 @@ body{
         width: 6rem;
     }
 
+    @media screen and (max-width:405px){
+        .div-inicio-grid{
+            position: relative;
+            top: 5rem;
+            width: 100%;
+            height: 30rem;
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows: 20% 45% 22% 13%;
+            grid-template-areas: 
+                                "div-h2-inicio"
+                                "div-img-inicio"
+                                "div-h3-inicio"
+                                "div-btn-inicio";
+        }
+        .h2-inicio{
+            width: 90%;
+            font-size: 1.7rem;
+        }
+        .h3-inicio{
+            width: 90%;
+            font-size: 1.1rem;
+        }
+        .btn-inicio{
+            width: 10rem;
+            height: 2.5rem;
+            font-size: 0.85rem;
+            margin-top: 0.5rem;
+        }
+        .img-inicio{
+            width: 16rem;
+            border-radius: 1rem;
+        }
+        .h2-productos{
+            font-family: 'Metropolis Black';
+            color: white;
+            font-size: 1.6rem;
+            position: relative;
+            top: 2rem;
+            text-align: center;
+        }
+        .position-row-productos{
+            position: relative;
+            top: 4rem;
+        }
+        .div-row-productos{
+            position: relative;
+            width: 100%;
+            height: 69rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .div-switch-flex{
+            width: 100%;
+            height: 33.3%;
+            display: flex;
+            align-items: center;
+        }
+        .container-card{
+            width: 17rem;
+            height: 22rem;
+            display: flex;
+            align-items: center;
+            background-color: #232323;
+            border-radius: 1rem;
+        }
+        .img-productos{
+            border-radius: 1rem;
+            width: 14rem;
+            height: 10rem;
+            margin-top: 0.8rem;
+        }
+        .title-card-productos{
+            color: #AB2123;
+            font-size: 1.15rem;
+            font-family: 'Metropolis Black';
+            text-align: center;
+        }
+        .p-switch{
+            font-size: 1rem;
+            font-family: 'Metropolis Medium';
+            text-align: center;
+            color: white;
+        }
+        .p-switch-abajo{
+            font-size: 0.7rem;
+            font-family: 'Metropolis Medium';
+            color: rgb(233, 233, 233);
+            text-align: center;
+        }
+        .h2-que-hacemos{
+            top: 2rem;
+        }
+        .h4-que-hacemos{
+            left: 5%;
+            width: 90%;
+            top: 3.5rem;
+            font-size: 1rem;
+        }
+        .container-div-que-hacemos{
+            display: flex;
+            flex-direction: column;
+            left: 8.75%;
+            width: 82.5%;
+            justify-content: center;
+            position: absolute;
+            top: 135rem;
+            height: 46rem;
+        }
+        .flex-div1-que-hacemos{
+            height: 40.5%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .div-1-que-hacemos{
+            background-color: #12121200;
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%);
+            height: 100%;
+            width: 100%;
+        }
+        .flex-div2-que-hacemos{
+            height: 21.5%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .div-2-que-hacemos{
+            background-color: #12121200;
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%);
+            height: 100%;
+            width: 100%;
+        }
+        .flex-div3-que-hacemos{
+            height: 38%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .div-3-que-hacemos{
+            background-color: #12121200;
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%);
+            height: 100%;
+            width: 100%;
+        }
+        .h5-que-hacemos{
+            font-size: 1.2rem;
+            margin-top: 2rem;
+        }
+        .p-que-hacemos{
+            position: relative;
+            left: 5%;
+            width: 90%;
+            margin-top: 0.68rem;
+        }
+        .h2-equipo{
+            top: 1rem;
+        }
+        .h2-aliados{
+            width: 60%;
+            position: relative;
+            left: 20%;
+            text-align: center;
+            font-size: 1.6rem;
+            color: white;
+            top: 0.5rem;
+        }
+        .logo-aliados-municipalidad{
+            width: 4.5rem;
+            margin-left: 0.4rem;
+        }
+    }
     @media screen and (min-width:575px) and (max-width:786px){
-        /* Icon whatsapp */
 
         .div-whatsapp-btn{
             bottom: 2.5rem;
@@ -1178,6 +2012,11 @@ body{
         .btn-whatsapp{
             width: 2.8rem;
             height: 2.9rem;
+        }
+        .img-inicio{
+            width: 23.5rem;
+            height: 14rem;
+            border-radius: 1rem;
         }
         .div-h2-aliados{
             height: 27%;
@@ -1231,5 +2070,6 @@ body{
         .equipo-mobile-f{
             width: 11rem;
         }
+
     }
 }
