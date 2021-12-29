@@ -68,7 +68,7 @@ function scrollNavBar(pClass){
             $(`.nav__${pClass}--a-aliados`).removeClass(`li-active-${pClass}`)
     
         }
-        if($(`#div-header-${pClass}`).offset().top > 3975){
+        if($(`#div-header-${pClass}`).offset().top > 3915){
     
             $(`.nav__${pClass}--a-aliados`).removeClass(`li-active-${pClass}`)
     

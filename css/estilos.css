@@ -384,6 +384,7 @@ body{
     position: relative;
     left: 10%;
     width: 80%;
+    font-size: 1.1rem;
     margin-top: 1.1rem;
     text-align: center;
     font-family: 'Metropolis Medium';
@@ -627,7 +628,223 @@ body{
 
 /* SECCION FORMULARIO */
 .seccion-form{
-    height: 49rem;
+    height: 53.5rem;
+}
+.h3-formulario{
+    position: relative;
+    left: 25%;
+    width: 50%;
+    top: 6rem;
+    font-size: 1.9rem;
+    font-family: 'Metropolis Black';
+    color: white;
+    text-align: center;
+}
+.div-container-formulario{
+    width: 35%;
+    position: relative;
+    left: 32.5%;
+    border-radius: 2rem;
+    top: 7.5rem;
+    background-color: #AB2123;
+    height: 35rem;
+    display: flex;
+    flex-direction: column;
+}
+.form-grid-h3{
+    height: 12.5%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.h3-contactanos{
+    color: white;
+    font-family: 'Metropolis Black';
+    font-size: 2rem;
+}
+.form-grid-p{
+    height: 12.5%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.p-contactanos{
+    color: white;
+    font-size: 1rem;
+    font-family: 'Metropolis Medium';
+    height: 0.6rem;
+    text-align: center;
+}
+.div-contactanos{
+    height: 75%;
+}
+.form{
+    position: relative;
+    top: 2rem;
+    left: 10%;
+    height: 88%;
+    width: 80%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 17.5% 17.5% 50% 14%;
+    grid-template-areas: 
+                        "name-form telephone-form"
+                        "email-form email-form"
+                        "textarea-form textarea-form"
+                        "btn-form btn-form";
+}
+.name-form{
+    grid-area: name-form;
+    width: 95%;
+    border-radius: 1rem;
+    border: none;
+    outline: none;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+    height: 2.9rem;
+    font-family: 'Metropolis Medium';
+    padding: 1rem;
+}
+.telephone-form{
+    position: relative;
+    left: 5%;
+    width: 95%;
+    border-radius: 1rem;
+    outline: none;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+    grid-area: telephone-form;
+    border: none;
+    font-family: 'Metropolis Medium';
+    height: 2.9rem;
+    padding: 1rem;
+}
+.email-form{
+    grid-area: email-form;
+    height: 2.9rem;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+    border: none;
+    padding: 1rem;
+    outline: none;
+    font-family: 'Metropolis Medium';
+    border-radius: 1rem;
+}
+.textarea-form{
+    grid-area: textarea-form;
+    border: none;
+    padding: 1rem;
+    border-radius: 1rem;
+    outline: none;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+    font-family: 'Metropolis Medium';
+    height: 10rem;
+}
+.btn-form{
+    grid-area: btn-form;
+    font-family: 'Metropolis Black';
+    color: #AB2123;
+    border: none;
+    border-radius: 1rem;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+    font-size: 1.1rem;
+    height: 2.7rem;
+}
+.formulario-forma-1{
+    position: absolute;
+    top: 253.5rem;
+}
+.formulario-circle-1{
+    width: 3.7rem;
+    height: 3.7rem;
+    border-radius: 50%;
+    position: absolute;
+    top: 272rem;
+    left: 15%;
+    background-color: #F3F4F5;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+}
+.formulario-circle-2{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    position: absolute;
+    top: 282rem;
+    left: 7%;
+    background-color: #AB2123;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+}
+.formulario-circle-3{
+    width: 3.7rem;
+    height: 3.7rem;
+    border-radius: 50%;
+    position: absolute;
+    top: 260rem;
+    right: 7%;
+    background-color: #AB2123;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+}
+.formulario-circle-4{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    position: absolute;
+    float: right;
+    top: 280rem;
+    right: 13%;
+    background-color: #146EAC;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+}
+.container-cartel-form{
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: #00000041;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    width: 100vw;
+    z-index: 1;
+    height: 100vh;
+    transition: 0.5s all ease-in;
+}
+.active-cartel-form{
+    visibility: visible;
+    opacity: 1;
+}
+.cartel-form{
+    width: 24rem;
+    border-radius: 1rem;
+    height: 14.3rem;
+    background-color: white;
+    border: 2px solid #AB2123;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+}
+.p-cartel-form{
+    text-align: center;
+    position: relative;
+    top: 2.6rem;
+    font-size: 1.1rem;
+    font-family: 'Metropolis Black';
+    color: #AB2123;
+}
+.btn-cartel-form{
+    position: relative;
+    top: 3rem;
+    height: 2.2rem;
+    border-radius: 1rem;
+    font-size: 1.1rem;
+    left: 25%;
+    width: 50%;
+    background-color: #AB2123;
+    border: none;
+    outline: none;
+    color: #F3F4F5;
+    font-family: 'Metropolis Black';
+}
+#a-mail-form{
+    opacity: 0;
+    visibility: hidden;
 }
 
 /* Icon whatsapp */
@@ -929,6 +1146,12 @@ body{
         width: 19rem;
         height: 25rem;
     }
+    .div-container-formulario{
+        width: 40%;
+        left: 30%;
+        top: 8rem;
+        background-color: #AB2123;
+    }
 }
 @media screen and (min-width:787px) and (max-width:991px){
 
@@ -1016,6 +1239,9 @@ body{
         top: 109rem;
         height: 31rem;
     }
+    .p-que-hacemos{
+        font-size: 1rem;
+    }
     .flex-div1-que-hacemos{
         width: 33.3%;
         display: flex;
@@ -1090,6 +1316,28 @@ body{
     }
     .logo-aliados-telefonica{
         width: 5.5rem;
+    }
+    .div-container-formulario{
+        width: 50%;
+        left: 25%;
+        top: 4.5rem;
+        background-color: #AB2123;
+    }
+    .h3-formulario{
+        left: 30%;
+        width: 40%;
+        top: 3rem;
+        font-size: 1.9rem;
+    }
+    .formulario-circle-4{
+        right: 10%;
+    }
+    .formulario-forma-1{
+        position: absolute;
+        top: 253rem;
+    }
+    .form-desktop-f{
+        width: 16rem;
     }
     .div-whatsapp-btn{
         bottom: 3rem;
@@ -1256,7 +1504,7 @@ body{
     /* SECCIONES MOBILE */
 
     .main-mobile{
-        height: 275rem;
+        height: 278.5rem;
     }
 
     /* SECCION INICIO MOBILE */
@@ -1468,6 +1716,7 @@ body{
         left: 5%;
         width: 90%;
         margin-top: 0.8rem;
+        font-size: 1rem;
     }
     .forma-1-que-hacemos{
         top: 115rem;
@@ -1634,7 +1883,141 @@ body{
 
     /* SECCION FORMULARIO */
     .seccion-form{
-        height: 36.5rem;
+        height: 38rem;
+    }
+    .h3-formulario{
+        left: 10%;
+        width: 80%;
+        top: 2rem;
+        font-size: 1rem;
+    }
+    .div-container-formulario{
+        width: 70%;
+        position: relative;
+        left: 15%;
+        border-radius: 2rem;
+        top: 2.5rem;
+        background-color: #AB2123;
+        height: 29rem;
+        display: flex;
+        flex-direction: column;
+    }
+    .form-grid-h3{
+        height: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+    .h3-contactanos{
+        color: white;
+        font-family: 'Metropolis Black';
+        font-size: 1.6rem;
+    }
+    .form-grid-p{
+        height: 10%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .p-contactanos{
+        color: white;
+        font-size: 0.8rem;
+        font-family: 'Metropolis Medium';
+        height: 0.6rem;
+        text-align: center;
+    }
+    .div-contactanos{
+        height: 80%;
+    }
+    .form{
+        position: relative;
+        top: 1.5rem;
+        left: 10%;
+        height: 88%;
+        width: 80%;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 16% 16% 16% 40% 13%;
+        grid-template-areas: 
+                            "name-form name-form"
+                            "telephone-form telephone-form"
+                            "email-form email-form"
+                            "textarea-form textarea-form"
+                            "btn-form btn-form";
+    }
+    .name-form{
+        grid-area: name-form;
+        width: 100%;
+        border-radius: 1rem;
+        border: none;
+        outline: none;
+        box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+        height: 2.7rem;
+        font-size: 0.8rem;
+        font-family: 'Metropolis Medium';
+        padding: 1rem;
+    }
+    .telephone-form{
+        position: relative;
+        left: 0;
+        width: 100%;
+        border-radius: 1rem;
+        outline: none;
+        box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+        grid-area: telephone-form;
+        border: none;
+        font-size: 0.8rem;
+        font-family: 'Metropolis Medium';
+        height: 2.7rem;
+        padding: 1rem;
+    }
+    .email-form{
+        grid-area: email-form;
+        height: 2.7rem;
+        box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+        border: none;
+        padding: 1rem;
+        font-size: 0.8rem;
+        outline: none;
+        font-family: 'Metropolis Medium';
+        border-radius: 1rem;
+    }
+    .textarea-form{
+        grid-area: textarea-form;
+        border: none;
+        padding: 1rem;
+        border-radius: 1rem;
+        font-size: 0.8rem;
+        outline: none;
+        box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+        font-family: 'Metropolis Medium';
+        height: 7rem;
+    }
+    .btn-form{
+        grid-area: btn-form;
+        font-family: 'Metropolis Black';
+        color: #AB2123;
+        border: none;
+        font-size: 0.8rem;
+        border-radius: 1rem;
+        box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+        font-size: 1.1rem;
+        height: 2.5rem;
+    }
+    .formulario-forma-1{
+        display: none;
+    }
+    .formulario-circle-1{
+        display: none;
+    }
+    .formulario-circle-2{
+        display: none;
+    }
+    .formulario-circle-3{
+        display: none;
+    }
+    .formulario-circle-4{
+        display: none;
     }
 
     /* Icon whatsapp */
@@ -2001,6 +2384,52 @@ body{
         .logo-aliados-municipalidad{
             width: 4.5rem;
             margin-left: 0.4rem;
+        }
+        .div-container-formulario{
+            width: 80%;
+            position: relative;
+            left: 10%;
+            border-radius: 2rem;
+            top: 2.5rem;
+            background-color: #AB2123;
+            height: 29rem;
+            display: flex;
+            flex-direction: column;
+        }
+        .p-contactanos{
+            color: white;
+            font-size: 0.7rem;
+            font-family: 'Metropolis Medium';
+            height: 1rem;
+            text-align: center;
+        }
+        .form-grid-p{
+            height: 12%;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .div-contactanos{
+            height: 78%;
+        }
+        .container-cartel-form{
+            display: flex;
+            justify-content: start;
+        }
+        .cartel-form{
+            position: relative;
+            width: 90%;
+            left: 5%;
+        }
+        .p-cartel-form{
+            font-size: 1rem;
+            top: 2.7rem;
+        }
+        .btn-cartel-form{
+            font-size: 1rem;
+            left: 25%;
+            width: 50%;
+            top: 3.2rem;
         }
     }
     @media screen and (min-width:575px) and (max-width:786px){

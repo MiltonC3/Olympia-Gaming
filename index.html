@@ -322,9 +322,40 @@
 
       <!-- SECCION FORMULARIO -->
       <section id="sec-form" class="seccion-form">
+        <h3 class="h3-formulario">¿Tienes alguna barrera física? ¿Conoces a una persona con discapacidad?</h3>
+        <div class="div-container-formulario">
+          <div class="form-grid-h3">
+            <h3 class="h3-contactanos">¡Contáctanos!</h3>
+          </div>
+          <div class="form-grid-p">
+            <p class="p-contactanos">Déjanos tus datos para contactarnos contigo.</p>
+            <p class="p-contactanos">Ya sabes nuestra misión: que todas las personas puedan jugar videojuegos.</p>
+          </div>
+          <div class="div-contactanos">
+            <form id="form" action="" class="form">
+              <input class="name-form" name="name" required type="text" id="name" placeholder="Nombre">
+              <input class="telephone-form" name="phone" type="text" id="phone" required placeholder="Teléfono">
+              <input class="email-form" name="email" type="text" id="email" required placeholder="Email">
+              <textarea class="textarea-form" id="message" name="message" id="message" cols="30" rows="10" placeholder="Tu mensaje..."></textarea>
+              <button class="btn-form" type="submit">Enviar</button>
+            </form>
+            <div id="container-cartel-form" class="container-cartel-form">
+              <div id="cartel-form" class="cartel-form">
+                <p class="p-cartel-form">¡Gracias por contactarnos!</p>
+                <p class="p-cartel-form">Recibimos tu mensaje</p>
+                <button class="btn-cartel-form" id="btn-cerrar-cartel">Genial</button>
+              </div>
+            </div>
+            <a href="mailto:miltoncoria555@gmail.com" id="a-mail-form"></a>
+          </div>
+        </div>
+        <div class="formulario-forma-1"><img class="form-desktop-f" src="img/formulario-forma-1.svg" alt=""></div>
+        <div class="formulario-circle-1"></div>
+        <div class="formulario-circle-2"></div>
+        <div class="formulario-circle-3"></div>
+        <div class="formulario-circle-4"></div>
       </section>
     </main>
-
     <!-- Footer -->
 
     <div class="div-whatsapp-btn">
@@ -377,7 +408,7 @@
         <img src="img/logo-mobile-footer.svg" alt="">
       </div>
       <div class="footer__div--copyright">
-        <p class="footer__copyright--p">Realizado por Miguel, Milton y Mariela para Olympia Gaming - 2021</p>
+        <p class="footer__copyright--p">Realizado Milton y Mariela para Olympia Gaming - 2021</p>
       </div>
       <div class="footer__forma--1">
         <img class="footer__formas--width" src="img/footer-forma-1.svg" alt="">
@@ -395,5 +426,6 @@
 
     <script src="js/menu-scroll-nav.js"></script>
     <script src="js/menu-mobile.js"></script>
+    <script src="js/cartel-form.js"></script>
 </body>
 </html>
