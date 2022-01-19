@@ -18,6 +18,16 @@ body{
     overflow-x: hidden;
 }
 
+::-webkit-scrollbar {
+    width: 15px;
+    background-color: #050505;
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: #AB2123;
+    border: 1px solid #AB2123;
+}
+
 /****************************************** DESKTOP ********************************************/
 
 /* HEADER DESKTOP */
@@ -35,7 +45,7 @@ body{
 }
 /* header desktop logo */
 .header__desktop--div-logo{
-    width: 22.5vw;
+    width: 22.25vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -45,7 +55,7 @@ body{
 }
 /* nav desktop */
 .nav__desktop--div{
-    width: 55vw;
+    width: 55.25vw;
     display: flex;
 }
 .nav__desktop--ul{
@@ -54,7 +64,7 @@ body{
     list-style: none;
     flex-direction: row;
     position: relative;
-    top: 0.6rem;
+    top: 0.5rem;
     align-items: center;
 }
 .nav__desktop--li{
@@ -114,7 +124,7 @@ body{
 }
 .header__desktop--btn-facebook{
     text-decoration: none;
-    width: 2.9rem;
+    width: 3rem;
     height: 2.3rem;
     align-items: center;
     border-radius: 50%;
@@ -443,7 +453,7 @@ body{
     width: 60%;
     position: relative;
     left: 20%;
-    top: 5rem;
+    top: 6rem;
     display: grid;
     height: 61rem;
     grid-template-columns: 50% 50%;
@@ -537,7 +547,7 @@ body{
     width: 17rem;
 }
 
-/* seccion aliados */
+/* SECCION ALIADOS */
 .seccion-aliados{
     height: 31rem;
     width: 100%;
@@ -733,6 +743,7 @@ body{
     padding: 1rem;
     border-radius: 1rem;
     outline: none;
+    resize: none;
     box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
     font-family: 'Metropolis Medium';
     height: 10rem;
@@ -856,7 +867,7 @@ body{
     position: fixed;
     display: flex;
     justify-content: center;
-    width: 3rem;
+    width: 3.1rem;
     height: 3.2rem;
     z-index: 3;
     border-radius: 50%;
@@ -869,9 +880,11 @@ body{
 }
 .btn-whatsapp{
     width: 3rem;
-    height: 3.1rem;
+    height: 3rem;
     border-radius: 50%;
     background-color: #12121200;
+    display: flex;
+    justify-content: center;
     border: none;
 }
 .span-whatsapp{
@@ -930,7 +943,7 @@ body{
     width: 25vw;
 }
 .footer__redes--icon{
-    width: 2.2rem;
+    width: 2.3rem;
     transition: 0.3s;
 }
 .footer__redes--icon:hover{
@@ -1013,7 +1026,7 @@ body{
 .footer__copyright--p{
     text-align: center;
     font-family: 'Metropolis Medium';
-    font-size: 1rem;
+    font-size: 1.1rem;
     color: #333333;
 }
 .footer__forma--1{
@@ -2025,13 +2038,13 @@ body{
     .div-whatsapp-btn{
         bottom: 2rem;
         right: 2rem;
-        width: 2.8rem;
-        height: 2.9rem;
+        width: 2.85rem;
+        height: 2.95rem;
         box-shadow: 0px 12px 15px rgba(0, 0, 0, 0.3);
     }
     .btn-whatsapp{
         width: 2.8rem;
-        height: 2.85rem;
+        height: 2.8rem;
         border-radius: 50%;
         background-color: #12121200;
         border: none;

@@ -6,7 +6,6 @@ const nameInput = document.getElementById("name")
 const phoneInput = document.getElementById("phone")
 const emailInput = document.getElementById("email")
 const messageInput = document.getElementById("message")
-const urlEmail = document.getElementById("a-mail-form")
 
 idForm.addEventListener('submit', formFunction)
 
@@ -26,17 +25,10 @@ cartelFormulario.addEventListener('click', (e) => {
     e.stopPropagation()
 })
 
-function formFunction(event){
-
-    event.preventDefault()
+function formFunction(){
 
     if(nameInput.value > ""  && phoneInput.value > "" && emailInput.value > "" && messageInput.value > ""){
         containerCartel.classList.toggle("active-cartel-form")
     }
 
-    const form = new FormData(this)
-
-    urlEmail.setAttribute('href', `mailto:miltoncoria555@gmail.com?subject=Nombre: ${form.get('name')} Correo: ${form.get('email')} Télefono: ${form.get('phone')}&body=${form.get('message')}`)
-
-    urlEmail.click()
 }
